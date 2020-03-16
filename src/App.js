@@ -4,10 +4,9 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <TodoTemplate>
       Let's create Todo!
-      <TodoTemplate />
-    </div>
+    </TodoTemplate>
   );
 }
 
