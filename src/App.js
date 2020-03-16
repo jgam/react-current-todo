@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import TodoTemplate from './components/TodoTemplate';
 import './App.css';
 
 function App() {
   return (
     <div>
       Let's create Todo!
+      <TodoTemplate />
     </div>
   );
 }
