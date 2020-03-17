@@ -1,11 +1,12 @@
 import React from 'react';
 import TodoTemplate from './components/TodoTemplate';
+import TodoInsert from './components/TodoInsert';
 import './App.css';
 
 function App() {
   return (
     <TodoTemplate>
-      Let's create Todo!
+      <TodoInsert />
     </TodoTemplate>
   );
 }
