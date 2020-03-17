@@ -9,7 +9,7 @@ function App() {
     {
       id: 1,
       text: 'learn the basics of react',
-      checked: true,
+      checked: false,
     },
     {
       id:2,
@@ -25,7 +25,7 @@ function App() {
   return (
     <TodoTemplate>
       <TodoInsert />
-      <TodoList />
+      <TodoList todos={todos} />
     </TodoTemplate>
   );
 }
