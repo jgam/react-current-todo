@@ -4,6 +4,18 @@ import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
 import './App.css';
 
+function createBulkTodos(){
+  const array = [];
+  for(let i = 1; i<= 2500; i++){
+    array.push({
+      id:1,
+      text: `todos ${i}`,
+      checked:false,
+    })
+  }
+  return array;
+}
+
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -63,4 +75,4 @@ function App() {
   );
 }
 
-export default App;
+export default React.memo(App);
